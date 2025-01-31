@@ -15,8 +15,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        
-
         /* ADLaM Display font */
         @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 
@@ -34,9 +32,9 @@
 
 </head>
 
-<body>
+<body class="sora-font">
 
-    <header class="bg-orange-50 sora-font">
+    <header class="bg-orange-50">
         <nav class="max-w-360 mx-auto">
             <div class="navbar flex justify-between lg:px-0">
                 <div class="navbar-start gap-3">
@@ -85,7 +83,7 @@
         </nav>
     </header>
 
-    <main class="sora-font">
+    <main>
         <!-- Browse by category -->
         <section class="my-20 max-w-360 mx-auto p-5 lg:p-0">
             <h1 class="text-3xl adlam-display">Browse By Categories</h1>
@@ -110,7 +108,7 @@
                                 <img src="./c1-assets/fish-cartoon.png" />
                             </div>
                         </div>
-                        <h2 class="card-title">Dog</h2>
+                        <h2 class="card-title">Fish</h2>
                         <p>3 items</p>
 
                     </div>
@@ -122,7 +120,7 @@
                                 <img src="./c1-assets/cat-cartoon.png" />
                             </div>
                         </div>
-                        <h2 class="card-title">Dog</h2>
+                        <h2 class="card-title">Cat</h2>
                         <p>3 items</p>
 
                     </div>
@@ -134,7 +132,7 @@
                                 <img src="./c1-assets/bird-cartoon.png" />
                             </div>
                         </div>
-                        <h2 class="card-title">Dog</h2>
+                        <h2 class="card-title">Birds</h2>
                         <p>3 items</p>
 
                     </div>
@@ -146,7 +144,7 @@
                                 <img src="./c1-assets/mouse-cartoon.png" />
                             </div>
                         </div>
-                        <h2 class="card-title">Dog</h2>
+                        <h2 class="card-title">Small pet</h2>
                         <p>3 items</p>
 
                     </div>
@@ -158,7 +156,7 @@
                                 <img src="./c1-assets/rabbit-cartoon.png" />
                             </div>
                         </div>
-                        <h2 class="card-title">Dog</h2>
+                        <h2 class="card-title">Rabbit</h2>
                         <p>3 items</p>
 
                     </div>
@@ -173,26 +171,27 @@
 
         <!-- Everyday Low price Section -->
         <section class="my-20 max-w-360 mx-auto">
-            
+
             <h1 class="adlam-display text-3xl px-5 lg:px-0">Everyday low Price</h1>
             <div class="my-8 md:my-10 lg:my-12 px-5 lg:px-0 grid gap-6 md:grid-cols-5 ">
-                <div class="bg-linear-[315deg,#ACD2FD,#F8CCFB] rounded-xl min-h-75 relative md:col-span-3 md:flex md:items-center md:justify-center">
-                    <div class="adlam-display space-y-3 pl-10 py-8 md:p-10">
+                <div
+                    class="bg-linear-[315deg,#ACD2FD,#F8CCFB] rounded-xl min-h-75 relative md:col-span-3 md:flex md:items-center md:justify-center">
+                    <div class="adlam-display space-y-3 pl-8 py-8 md:p-10">
                         <p class="sora-font text-xl hidden md:block">Under Price</p>
                         <h2 class="text-2xl md:text-3xl lg:4xl">Pet Grooming Mitt</h2>
                         <p class="text-white hidden md:block md:text-xl lg:text-2xl ">(Easy Hair Removal)</p>
                         <h1 class="text-4xl text-white md:text-inherit lg:text-5xl">$7.99</h1>
                     </div>
-    
-                    <div class="flex justify-end absolute bottom-3 right-10 md:static">
+
+                    <div class="flex justify-end absolute bottom-0 right-0 md:static">
                         <img class="w-1/2 md:w-full" src="c1-assets/cute-dog-mid.png" alt="">
                     </div>
                 </div>
 
                 <div class="bg-linear-[315deg,#F9DF8A,#FFF9F4] rounded-xl min-h-75 relative md:col-span-2 ">
-                    <div class="adlam-display space-y-3 px-10 py-8 md:p-10">
+                    <div class="adlam-display space-y-3 px-8 py-8 md:p-10">
                         <h2 class="text-2xl md:text-3xl lg:4xl">T-shirt for Dogs</h2>
-                        <h1 class="text-4xl text-yellow-300 hidden md:block lg:text-5xl">$7.99</h1>
+                        <h1 class="text-4xl text-yellow-300 lg:text-5xl">$7.99</h1>
                     </div>
 
                     <div class="flex justify-end absolute bottom-0 right-4 lg:top-20  md:justify-end">
@@ -201,14 +200,43 @@
                 </div>
             </div>
 
-            
+
         </section>
 
 
     </main>
 
-    <footer>
+    <footer class="relative bg-yellow-100 mt-100">
 
+
+        <div class="footer max-w-360 mx-auto gap-20 pt-100 pb-30 px-5 lg:px-0">
+            
+            <div class="max-w-96">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="c1-assets/logo-footer.png" alt="">
+                    <p class="text-2xl hidden md:block">Browse<span class="text-yellow-300">4</span>Pets</p>
+                </div>
+
+                <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends
+                </p>
+            </div>
+
+            <nav class="text-xl">
+                <a class="link link-hover mb-8">Find a pet</a>
+                <a class="link link-hover mb-8">Breeds</a>
+                <a class="link link-hover">Contact us</a>
+            </nav>
+
+            <div class="mt-auto">
+                <h6>Follow us</h6>
+                <div class="flex gap-5">
+                    <a class="link"><img src="c1-assets/Social icons/facebook.png" alt=""></a>
+                    <a class="link"><img src="c1-assets/Social icons/instagram.png" alt=""></a>
+                    <a class="link"><img src="c1-assets/Social icons/linkedin.png" alt=""></a>
+                    <a class="link"><img src="c1-assets/Social icons/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
