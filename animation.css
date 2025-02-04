@@ -54,7 +54,14 @@
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
+    .animation::after,
+    .animation::before{
+        height: 101%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .animation::after,
     .animation::before{
         height: 101%;
