@@ -7,29 +7,20 @@
     <title>Pet Shop</title>
     <link rel="shortcut icon" href="./c1-assets/dog-cartoon.png" type="image/x-icon">
 
+    
+
     <!-- tailwind CSS -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    
 
     <!-- DaiyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        /* ADLaM Display font */
-        @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
-
-        .adlam-display {
-            font-family: "ADLaM Display", serif;
-        }
-
-        /* Sora font */
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-
-        .sora-font {
-            font-family: "Sora", serif;
-        }
-    </style>
-
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="animation.css">
+    
 </head>
 
 <body class="sora-font">
@@ -85,25 +76,32 @@
 
     <main>
         <!-- banner -->
-        <section class="mt-5 md:mt-20 max-w-360 mx-auto px-5 lg:px-0 ">
-            <div class="h-[60vh] md:h-[80vh] bg-contain bg-bottom lg:bg-right bg-no-repeat "
-                style="background-image: url(c1-assets/cat-big.png);">
-                <div class="py-10">
-                    <h1 class="text-3xl md:text-5xl lg:text-6xl adlam-display">Pamper Your Pet,<br> Because They Deserve
-                        <br> the
-                        Best</h1>
-                    <p class="text-gray-400 py-5 md:text-2xl max-w-80 md:max-w-[500px] lg:max-w-[680px]">Discover a
-                        world of treats, toys,
-                        and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                    <div class="flex items-center gap-2">
-                        <a class="btn px-8 bg-yellow-300 border-yellow-300 font-medium text-lg lg:text-2xl">Find a
-                            pet</a>
+        <section class="mt-5 md:mt-20 max-w-360 mx-auto px-5 lg:px-0">
+            <div class="relative">
+                <div class="h-[60vh] md:h-[80vh] px-10 bg-contain bg-bottom lg:bg-cover bg-no-repeat rounded-lg bg-white"
+                    style="background-image: url(c1-assets/cat-big.png);">
+                    <div class="py-10">
+                        <h1 class="text-3xl md:text-5xl lg:text-6xl adlam-display">Pamper Your Pet,<br> Because They
+                            Deserve
+                            <br> the
+                            Best
+                        </h1>
+                        <p class="text-gray-400 py-5 md:text-2xl max-w-80 md:max-w-[500px] lg:max-w-[680px]">Discover a
+                            world of treats, toys,
+                            and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                        <div class="flex items-center gap-2">
+                            <a class="btn px-8 bg-yellow-300 border-yellow-300 font-medium text-lg lg:text-2xl">Find a
+                                pet</a>
 
-                        <div class="text-3xl md:text-5xl animate-bounce">🤩</div>
+                            <div class="text-3xl md:text-5xl animate-bounce">🤩</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="animation">
+                </div>
+
+            </div>
         </section>
 
         <!-- Browse by category -->
@@ -184,6 +182,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- Trending Pet products -->

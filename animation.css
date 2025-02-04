@@ -1,0 +1,62 @@
+/* ADLaM Display font */
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+.adlam-display {
+    font-family: "ADLaM Display", serif;
+}
+
+/* Sora font */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.sora-font {
+    font-family: "Sora", serif;
+}
+
+
+
+/* animation */
+@property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.animation::after,
+.animation::before {
+    content: '';
+    position: absolute;
+    height: 102%;
+    width: 101%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 12px;
+    background-image: conic-gradient(from var(--angle), transparent, orange);
+    animation: 10s spin linear infinite;
+}
+
+.animation::before {
+    filter: blur(1.5rem);
+    /* glowing effect */
+    opacity: 0.5;
+    /* controls the glowing effect   */
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .animation::after,
+    .animation::before{
+        height: 101%;
+    }
+}
